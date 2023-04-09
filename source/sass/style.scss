@@ -1,1 +1,10 @@
-// Начните писать стили здесь
+// базовые стили
+@import './global/fonts.scss';
+@import './global/visually-hidden.scss';
+@import './global/custom-reset.scss';
+
+// миксины и переменные
+@import './global/variables.scss';
+@import './global/mixins.scss';
+
+// блоки компонентов
