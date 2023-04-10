@@ -1,0 +1,12 @@
+.title {
+  font-family: $oswald;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  color: $color-basic;
+
+  &--light {
+    color: $color-basic-light;
+  }
+}

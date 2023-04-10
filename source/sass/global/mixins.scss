@@ -1,4 +1,4 @@
-@mixin accented-text ($font-size: 16px, $line-height: 20px) {
+@mixin accented-text($font-size: 16px, $line-height: 20px) {
   font-family: $oswald;
   font-style: normal;
   font-weight: 400;
@@ -7,7 +7,7 @@
   text-transform: uppercase;
 }
 
-@mixin main-text ($font-size: 14px, $line-height: 18px) {
+@mixin main-text($font-size: 14px, $line-height: 18px) {
   font-family: $lato;
   font-style: normal;
   font-weight: 400;
