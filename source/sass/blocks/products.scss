@@ -1,0 +1,27 @@
+.products__list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 20px;
+}
+
+.products__item {
+  padding: 24px 33px 18px 20px;
+  background-color: $background-special;
+}
+
+.products__title {
+  @include accented-text(24px, 37px);
+  margin-bottom: 22px;
+  color: $color-basic;
+}
+
+.products__subtitle {
+  @include main-text;
+  margin-bottom: 38px;
+}
+
+.products__link {
+  @include accented-text(16px, 16px);
+  padding: 4px 47px 4px 0;
+  color: $color-basic;
+}
