@@ -1,7 +1,7 @@
 // базовые стили
+@import "global/custom-reset.scss";
 @import "global/fonts.scss";
 @import "global/visually-hidden.scss";
-@import "global/custom-reset.scss";
 
 // миксины и переменные
 @import "global/variables.scss";
@@ -22,3 +22,6 @@
 @import "blocks/button.scss";
 @import "blocks/products.scss";
 @import "blocks/feature.scss";
+@import "blocks/demo.scss";
+@import "blocks/demo-option.scss";
+@import "blocks/cat-slider.scss";

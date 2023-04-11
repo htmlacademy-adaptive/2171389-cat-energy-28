@@ -1,0 +1,17 @@
+.demo-option__item {
+  width: 124px;
+}
+
+.demo-option__value {
+  @include accented-text(24px, 24px);
+  color: $color-basic;
+}
+
+.demo-option__desc {
+  @include main-text(12px, 12px);
+}
+
+.demo-option__results {
+  @include accented-text(14px, 20px);
+  color: $color-basic;
+}

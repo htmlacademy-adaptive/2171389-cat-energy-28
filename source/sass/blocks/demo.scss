@@ -1,0 +1,20 @@
+.demo {
+  padding-top: 25px;
+  padding-bottom: 39px;
+  background-color: darken($background-special, 3%);
+}
+
+.demo__title {
+  font-family: $oswald;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: $color-basic;
+  margin-bottom: 40px;
+}
+
+.demo__desc {
+  @include main-text;
+  margin-bottom: 20px;
+}
