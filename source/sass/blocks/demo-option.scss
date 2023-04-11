@@ -9,6 +9,7 @@
 
 .demo-option__desc {
   @include main-text(12px, 12px);
+  text-transform: lowercase;
 }
 
 .demo-option__results {
