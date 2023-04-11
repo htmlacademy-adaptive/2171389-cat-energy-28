@@ -1,25 +1,24 @@
 // базовые стили
-@import './global/fonts.scss';
-@import './global/visually-hidden.scss';
-@import './global/custom-reset.scss';
+@import "global/fonts.scss";
+@import "global/visually-hidden.scss";
+@import "global/custom-reset.scss";
 
 // миксины и переменные
-@import './global/variables.scss';
-@import './global/mixins.scss';
+@import "global/variables.scss";
+@import "global/mixins.scss";
 
 // блоки компонентов
-@import './blocks/page.scss';
-@import './blocks/body.scss';
-@import './blocks/content-container.scss';
-@import './blocks/header.scss';
-@import './blocks/logo.scss';
-@import './blocks/main-nav.scss';
-@import './blocks/site-list.scss';
-@import './blocks/index-main.scss';
-@import './blocks/title.scss';
-@import './blocks/promo.scss';
-@import './blocks/promo-img.scss';
-@import './blocks/button.scss';
-@import './blocks/products.scss';
-
-
+@import "blocks/page.scss";
+@import "blocks/body.scss";
+@import "blocks/content-container.scss";
+@import "blocks/header.scss";
+@import "blocks/logo.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/site-list.scss";
+@import "blocks/index-main.scss";
+@import "blocks/title.scss";
+@import "blocks/promo.scss";
+@import "blocks/promo-img.scss";
+@import "blocks/button.scss";
+@import "blocks/products.scss";
+@import "blocks/feature.scss";
