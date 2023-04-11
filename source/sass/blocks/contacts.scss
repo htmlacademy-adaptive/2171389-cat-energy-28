@@ -1,0 +1,17 @@
+.contacts {
+  padding: 26px 0;
+}
+
+.contacts__content {
+  display: flex;
+}
+
+.contacts__title {
+  @include accented-text;
+  color: lighten($color-basic, 6.5%);
+  flex-basis: 100%;
+}
+
+.contacts__address-street {
+  @include main-text(14px, 20px);
+}
