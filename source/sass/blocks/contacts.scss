@@ -12,7 +12,7 @@
 
 .contacts__title {
   @include accented-text;
-  color: lighten($color-basic, 6.5%);
+  color: #111111;
   flex-basis: 100%;
 }
 
