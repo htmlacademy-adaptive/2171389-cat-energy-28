@@ -1,0 +1,18 @@
+.form-comment__title {
+  font-family: $oswald;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  color: $color-basic;
+  margin-bottom: 38px;
+}
+
+.form-comment__textarea {
+  @include form-text;
+  @include input-basic;
+  width: 100%;
+  min-height: 150px;
+  padding: 9px 12px 9px 15px;
+  box-sizing: border-box;
+}

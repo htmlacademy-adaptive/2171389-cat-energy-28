@@ -1,0 +1,9 @@
+.form-info__label {
+  @include form-text;
+}
+
+.form-info__input {
+  @include form-text;
+  @include input-basic;
+  padding: 20px 14px 13px;
+}

@@ -15,3 +15,22 @@
   line-height: $line-height;
   color: $color-special;
 }
+
+
+@mixin form-text($color: #444444) {
+  font-family: $oswald;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $color;
+
+  &::placeholder {
+    color: inherit;
+  }
+}
+
+@mixin input-basic {
+  border: 1px solid #e7e7e7;
+}

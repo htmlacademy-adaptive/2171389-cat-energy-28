@@ -1,0 +1,42 @@
+.program-selection {
+  padding: 27px 0 32px;
+}
+
+.program-selection__title {
+  margin-bottom: 37px;
+}
+
+.program-selection__desc {
+  @include accented-text(14px, 18px);
+  color: $color-basic;
+  margin-bottom: 39px;
+}
+
+.program-selection__info {
+  margin-bottom: 24px;
+}
+
+.program-selection__goal {
+  margin-bottom: 26px;
+}
+
+.program-selection__contacts {
+  margin-bottom: 24px;
+}
+
+.program-selection__comment {
+  margin-bottom: 23px;
+}
+
+.program-selection__add {
+  margin-bottom: 34px;
+}
+
+.program-selection__button {
+  margin-bottom: 21px;
+}
+
+.program-selection__warning {
+  @include main-text(14px, 16px);
+  color: $color-basic;
+}

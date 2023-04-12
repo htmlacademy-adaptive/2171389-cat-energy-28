@@ -42,7 +42,7 @@
         <p class="program-selection__desc">Заполните анкету, и мы подберем<br> программу питания для вашего кота
         </p>
         <form class="program-selection__form" action="https://echo.htmlacademy.ru/" method="post">
-          <fieldset class="program-selection__group form-info">
+          <fieldset class="program-selection__group program-selection__info form-info">
             <legend class="visually-hidden">Параметры кота</legend>
             <ul class="form-info__list">
               <li class="form-info__item">
@@ -59,7 +59,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="program-selection__group form-goal">
+          <fieldset class="program-selection__group program-selection__goal form-goal">
             <legend class="visually-hidden">Цель программы</legend>
             <ul class="form-goal__list">
               <li class="form-goal__item">
@@ -82,27 +82,27 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="program-selection__group form-info">
-            <legend class="form-info__title">Контактные данные (владельца кота)</legend>
-            <ul class="form-info__list">
-              <li class="form-info__item">
-                <label class="form-info__label" for="email_form">E-mail:<sup>*</sup></label>
-                <input class="form-info__input form-info__input--email" type="email" name="email" id="email_form"
+          <fieldset class="program-selection__group program-selection__contacts form-contacts">
+            <legend class="form-contacts__title">Контактные данные (владельца кота)</legend>
+            <ul class="form-contacts__list">
+              <li class="form-contacts__item">
+                <label class="form-contacts__label" for="email_form">E-mail:<sup>*</sup></label>
+                <input class="form-contacts__input form-contacts__input--email" type="email" name="email" id="email_form"
                   placeholder="kuklachev@gmail.com" required>
               </li>
-              <li class="form-info__item">
-                <label class="form-info__label" for="phone_form">Телефон:<sup>*</sup></label>
-                <input class="form-info__input form-info__input--tel" type="tel" name="phone" id="phone_form"
+              <li class="form-contacts__item">
+                <label class="form-contacts__label" for="phone_form">Телефон:<sup>*</sup></label>
+                <input class="form-contacts__input form-contacts__input--tel" type="tel" name="phone" id="phone_form"
                   placeholder="8 (960) 900-60-90" required>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="program-selection__group form-comment">
+          <fieldset class="program-selection__group program-selection__comment form-comment">
             <legend class="form-comment__title">Комментарий</legend>
-            <textarea class="form-comment__input" name="comment"
+            <textarea class="form-comment__textarea" name="comment"
               placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
-          <fieldset class="program-selection__group form-add">
+          <fieldset class="program-selection__group program-selection__add form-add">
             <legend class="form-add__title">Дополнительно</legend>
             <ul class="form-add__list">
               <li class="form-add__item">
@@ -132,11 +132,11 @@
             </ul>
           </fieldset>
           <button class="program-selection__button button" type="submit">Отправить заявку</button>
-          <p class="program-selection__warning"><sup>*</sup>— Обязательные поля</p>
+          <p class="program-selection__warning"><sup>*</sup> — Обязательные поля</p>
         </form>
       </div>
     </section>
-    <section class="contacts">
+    <section class="contacts contacts--dark-theme">
       <div class="content-container">
         <h2 class="visually-hidden">Наши контакты</h2>
         <div class="contacts__content">
