@@ -1,0 +1,13 @@
+.form-add__title {
+  font-family: $oswald;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  color: $color-basic;
+  margin-bottom: 34px;
+}
+
+.form-add__label {
+  @include form-text($color-basic);
+}

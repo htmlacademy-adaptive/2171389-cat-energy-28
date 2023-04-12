@@ -1,0 +1,20 @@
+.product-card {
+  padding: 11px 20px 14px 20px;
+
+  &--show-more {
+    padding-top: 70px;
+  }
+}
+
+.product-card__wrapper-content {
+  margin-bottom: 13px;
+}
+
+.product-card__link {
+  margin-bottom: 18px;
+}
+
+.product-card__title {
+  @include accented-text;
+  color: #222222;
+}

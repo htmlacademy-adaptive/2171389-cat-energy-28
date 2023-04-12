@@ -1,0 +1,14 @@
+.button {
+  @include accented-text(16px, 20px);
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: $color-basic-light;
+  background-color: $color-accent;
+  text-align: center;
+
+  &--accessory {
+    background-color: $background-special;
+    color: $color-special;
+  }
+}

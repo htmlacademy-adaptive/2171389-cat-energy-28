@@ -1,1 +1,47 @@
-// Начните писать стили здесь
+// базовые стили
+@import "global/custom-reset.scss";
+@import "global/fonts.scss";
+@import "global/visually-hidden.scss";
+
+// миксины и переменные
+@import "global/variables.scss";
+@import "global/mixins.scss";
+
+// блоки компонентов
+@import "blocks/page.scss";
+@import "blocks/body.scss";
+@import "blocks/content-container.scss";
+@import "blocks/header.scss";
+@import "blocks/logo.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/site-list.scss";
+@import "blocks/index-main.scss";
+@import "blocks/title.scss";
+@import "blocks/promo.scss";
+@import "blocks/promo-img.scss";
+@import "blocks/button.scss";
+@import "blocks/products.scss";
+@import "blocks/feature.scss";
+@import "blocks/demo.scss";
+@import "blocks/demo-option.scss";
+@import "blocks/cat-slider.scss";
+@import "blocks/contacts.scss";
+@import "blocks/location-map.scss";
+@import "blocks/footer.scss";
+@import "blocks/social.scss";
+@import "blocks/copyright.scss";
+@import "blocks/catalog-main.scss";
+@import "blocks/catalog.scss";
+@import "blocks/product-card.scss";
+@import "blocks/product-detail.scss";
+@import "blocks/more-products.scss";
+@import "blocks/add-products.scss";
+@import "blocks/add-product.scss";
+@import "blocks/catalog-gift.scss";
+@import "blocks/form-main.scss";
+@import "blocks/program-selection.scss";
+@import "blocks/form-info.scss";
+@import "blocks/form-goal.scss";
+@import "blocks/form-contacts.scss";
+@import "blocks/form-comment.scss";
+@import "blocks/form-add.scss";
