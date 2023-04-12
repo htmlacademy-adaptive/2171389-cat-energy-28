@@ -1,6 +1,9 @@
 .contacts {
   padding: 26px 0;
-  background-color: $background-special;
+
+  &--dark-theme {
+    background-color: $background-special;
+  }
 }
 
 .contacts__content {
