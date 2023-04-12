@@ -6,4 +6,9 @@
   color: $color-basic-light;
   background-color: $color-accent;
   text-align: center;
+
+  &--accessory {
+    background-color: $background-special;
+    color: $color-special;
+  }
 }
