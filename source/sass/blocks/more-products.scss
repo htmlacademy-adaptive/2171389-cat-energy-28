@@ -1,0 +1,14 @@
+.more-products {
+  text-align: center;
+}
+
+.more-products__title {
+  @include accented-text;
+  color: lighten($color-basic, 6.5%);
+  margin-bottom: 8px;
+}
+
+.more-products__subtitle {
+  @include main-text(12px, 16px);
+  margin-bottom: 21px;
+}
