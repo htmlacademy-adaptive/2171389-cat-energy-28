@@ -1,0 +1,11 @@
+.catalog-gift {
+  width: 100%;
+  min-height: 290px;
+  background-color: rgba(#68b738, 0.85);
+}
+
+.catalog-gift__slogan {
+  @include main-text(16px, 20px);
+  color: $color-basic-light;
+  text-align: center;
+}

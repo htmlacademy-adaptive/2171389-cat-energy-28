@@ -1,0 +1,13 @@
+.add-product {
+  padding-top: 13px;
+  padding-bottom: 19px;
+}
+
+.add-product__title {
+  @include accented-text(16px, 16px);
+  color: #222222;
+}
+
+.add-product__detail {
+  @include main-text(14px, 14px);
+}
