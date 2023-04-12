@@ -14,6 +14,12 @@
   row-gap: 20px;
 }
 
+.feature__icon {
+  width: 60px;
+  height: 60px;
+  background-color: $color-accent;
+}
+
 .feature__text {
   @include main-text;
 }
