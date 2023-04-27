@@ -1,7 +1,19 @@
 .catalog-gift {
   width: 100%;
   min-height: 290px;
+  padding-top: 59px;
+  padding-bottom: 43px;
+  box-sizing: border-box;
   background-color: rgba(#68b738, 0.85);
+
+  @media (min-width: $tablet-width) and (max-width: 1439px) {
+    min-height: 200px;
+    padding: 0 124px 3px 77px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: auto;
+  }
 }
 
 .catalog-gift__slogan {
