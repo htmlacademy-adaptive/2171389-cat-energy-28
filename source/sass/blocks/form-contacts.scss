@@ -1,19 +1,53 @@
 .form-contacts__title {
-  font-family: $oswald;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 26px;
-  color: $color-basic;
   margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 76px;
+  }
+}
+
+.form-contacts__list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  row-gap: 14px;
+
+  @media (min-width: $tablet-width) {
+    row-gap: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    column-gap: 80px;
+  }
+}
+
+.form-contacts__item {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+
+  @media (min-width: $tablet-width) {
+    column-gap: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-basis: 46.7%;
+   }
 }
 
 .form-contacts__label {
   @include form-text;
+  flex-shrink: 0;
 }
 
 .form-contacts__input {
   @include form-text;
   @include input-basic;
-  padding: 15px 40px 14px 15px;
+  padding: 15px 45px 14px 15px;
+  flex-grow: 1;
+
+  @media (min-width: $tablet-width) {
+    padding: 11px 45px 11px 20px;
+  }
 }

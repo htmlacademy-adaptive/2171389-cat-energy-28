@@ -1,11 +1,9 @@
 .form-comment__title {
-  font-family: $oswald;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 26px;
-  color: $color-basic;
   margin-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 76px;
+  }
 }
 
 .form-comment__textarea {
@@ -15,4 +13,9 @@
   min-height: 150px;
   padding: 9px 12px 9px 15px;
   box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    min-height: 174px;
+    padding: 10px 19px;
+  }
 }

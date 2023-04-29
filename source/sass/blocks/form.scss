@@ -1,0 +1,97 @@
+.form__info-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 24px;
+  margin-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    row-gap: 72px;
+    margin-bottom: 71px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-wrap: nowrap;
+    column-gap: 80px;
+    margin-bottom: 69px;
+  }
+}
+
+.form__title {
+  font-family: $oswald;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  color: $color-basic;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+.form__info {
+  flex-basis: 100%;
+
+  @media (min-width: $desktop-width) {
+    flex-basis: 50%;
+  }
+}
+
+.form__goal {
+  @media (max-width: $mobile-width-only) {
+    width: calc(100% + 40px);
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 -20px;
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: $tablet-width) {
+    flex-basis: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-basis: 45%;
+  }
+}
+
+.form__contacts {
+  margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
+  }
+}
+
+.form__comment {
+  margin-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
+  }
+}
+
+.form__add {
+  margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 61px;
+  }
+}
+
+.form__button {
+  margin-bottom: 21px;
+}
+
+.form__warning {
+  @include main-text(14px, 16px);
+  color: $color-basic;
+  text-align: center;
+}
