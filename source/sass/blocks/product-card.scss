@@ -31,8 +31,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 245px;
+    min-width: 245px;
     padding: 28px 38px 40px 39px;
+    flex-grow: 1;
+    flex-basis: 20%;
 
     &--size-xl {
       padding-top: 0;
