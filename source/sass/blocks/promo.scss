@@ -1,11 +1,30 @@
-.promo {
+.promo__container {
+  display: grid;
+  grid-template-columns: 1fr;
   padding-top: 27px;
-  background-color: rgba(#68b738, 0.85);
+
+  @media (min-width: $tablet-width) {
+    grid-template-rows: auto auto auto 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 190px;
+    margin-bottom: 136px;
+    grid-template-columns: 420px 1fr;
+  }
 }
 
 .promo__title {
-  text-align: center;
   margin-bottom: 25px;
+
+  @media (max-width: $mobile-width-only) {
+    color: $color-basic-light;
+    text-align: center;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 41px;
+  }
 }
 
 .promo__slogan {
@@ -13,4 +32,42 @@
   color: $color-basic-light;
   text-align: center;
   margin-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    color: $color-basic;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 52px;
+  }
+}
+
+.promo__img {
+  @media (min-width: $tablet-width) {
+    grid-area: 3 / 1 / 5 / 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-area: 1 / 2 / 5 / 3;
+    margin-left: -46px;
+  }
+}
+
+.promo__button {
+  @media (min-width: $tablet-width) {
+    width: 244px;
+    padding: 14px 26px;
+    box-sizing: border-box;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: 1439px) {
+    grid-area: 3 / 1 / 4 / 2;
+    margin-top: 29px;
+  }
 }
