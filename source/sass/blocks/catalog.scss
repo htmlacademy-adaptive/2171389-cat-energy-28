@@ -24,12 +24,17 @@
   row-gap: 8px;
 
   @media (min-width: $tablet-width) {
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
     gap: 60px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: 1152px) {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 80px;
     row-gap: 63px;
   }
