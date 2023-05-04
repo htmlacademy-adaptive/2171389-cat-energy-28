@@ -10,7 +10,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    flex-wrap: nowrap;
     column-gap: 80px;
     margin-bottom: 69px;
   }
@@ -34,7 +33,7 @@
   flex-basis: 100%;
 
   @media (min-width: $desktop-width) {
-    flex: 1 1 calc((100% / 2) - 80px);
+    flex: 0 0 calc((100% / 2) - 40px);
   }
 }
 
@@ -54,7 +53,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    flex: 1 1 calc((100% / 2) - 80px);
+    flex: 0 0 calc((100% / 2) - 40px);
   }
 }
 

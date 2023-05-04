@@ -5,6 +5,7 @@
   @media (min-width: $tablet-width) {
     @include input-basic;
     padding: 25px 28px;
+    box-sizing: border-box;
   }
 }
 

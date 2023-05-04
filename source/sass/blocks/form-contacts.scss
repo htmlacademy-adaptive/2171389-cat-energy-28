@@ -32,7 +32,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    flex: 1 1 calc((100% / 2) - 80px);
+    flex: 0 0 calc((100% / 2) - 40px);
    }
 }
 
