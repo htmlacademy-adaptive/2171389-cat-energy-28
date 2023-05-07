@@ -1,8 +1,18 @@
 .form-goal {
   padding-top: 22px;
-  padding-bottom: 19px;
-  border-top: 1px solid #d9d9d9;
-  border-bottom: 1px solid #d9d9d9;
+  padding-bottom: 18px;
+
+  @media (min-width: $tablet-width) {
+    @include input-basic;
+    padding: 25px 28px;
+    box-sizing: border-box;
+  }
+}
+
+.form-goal__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 13px;
 }
 
 .form-goal__label {

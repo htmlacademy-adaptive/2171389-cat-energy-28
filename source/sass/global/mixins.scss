@@ -29,6 +29,11 @@
   &::placeholder {
     color: inherit;
   }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 @mixin input-basic {

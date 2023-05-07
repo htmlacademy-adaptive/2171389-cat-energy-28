@@ -1,3 +1,13 @@
+.site-list {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: end;
+    column-gap: 35px;
+  }
+}
+
 .site-list__link {
   width: 100%;
   padding-top: 22px;
@@ -10,4 +20,17 @@
   text-transform: uppercase;
   color: $color-basic;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+    /*временный цвет*/
+    color: $color-special;
+  }
 }

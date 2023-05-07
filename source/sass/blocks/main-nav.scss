@@ -1,0 +1,10 @@
+.main-nav__toggle {
+  width: 24px;
+  height: 16px;
+  //временный бордер
+  border: 1px solid $color-basic;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}

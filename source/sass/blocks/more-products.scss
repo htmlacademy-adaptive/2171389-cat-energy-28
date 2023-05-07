@@ -1,14 +1,38 @@
-.more-products {
-  text-align: center;
-}
-
 .more-products__title {
   @include accented-text;
   color: #111111;
   margin-bottom: 8px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 22px;
+    text-align: center;
+    padding-left: 35px;
+    padding-right: 35px;
+    margin-bottom: 23px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .more-products__subtitle {
   @include main-text(12px, 16px);
   margin-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 87px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }

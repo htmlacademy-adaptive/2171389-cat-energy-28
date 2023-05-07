@@ -1,6 +1,4 @@
 .contacts {
-  padding: 26px 0;
-
   &--dark-theme {
     background-color: $background-special;
   }
@@ -8,14 +6,46 @@
 
 .contacts__content {
   display: flex;
+  justify-content: space-between;
+  padding: 26px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 56px 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 80px;
+    padding-right: 60px;
+  }
 }
 
 .contacts__title {
   @include accented-text;
   color: #111111;
-  flex-basis: 100%;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 .contacts__address-street {
   @include main-text(14px, 20px);
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: 1439px) {
+    text-align: right;
+  }
+}
+
+.contacts__address-city {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 19px;
+  }
 }

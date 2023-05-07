@@ -4,8 +4,24 @@
 
 .index-main__products {
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 71px;
+  }
 }
 
 .index-main__feature {
   margin-bottom: 49px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 104px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 83px;
+  }
 }
