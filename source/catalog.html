@@ -12,11 +12,12 @@
   <header class="header">
     <div class="header__wrapper content-container">
       <a class="header__logo logo" href="index.html">
-        <img class="logo__img" src="#" width="" height=""
-          alt="Логотип интернет-магазина фитнес еды для котиков «Кэт энерджи».">
-      </a>
-      <a class="header__logo-type logo" href="index.html">
-        <img class="logo__type" src="#" alt="Текстовый логотип «Кэт энерджи».">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/logo/logo-desk.svg" width="202" height="59">
+          <source media="(min-width: 768px)" srcset="img/logo/logo-tab.svg" width="174" height="52">
+          <img class="logo__img" src="img/logo/logo-mob.svg" width="191" height="38"
+            alt="Логотип интернет-магазина фитнес еды для котиков «Кэт энерджи».">
+        </picture>
       </a>
       <nav class="header__nav main-nav">
         <button class="main-nav__toggle" type="button">
@@ -280,7 +281,8 @@
                 <source type="image/webp" srcset="img/catalog/rice500-mob@1x.webp 1x,
                 img/catalog/rice500-mob@2x.webp 2x" width="72" height="84"> -->
                 <source media="(min-width: 768px)"
-                  srcset="img/catalog/rice500-tab@1x.png 1x, img/catalog/rice500-tab@2x.png 2x" width="163" height="174">
+                  srcset="img/catalog/rice500-tab@1x.png 1x, img/catalog/rice500-tab@2x.png 2x" width="163"
+                  height="174">
                 <img class="product-card__image product-card__image--small" src="img/catalog/rice500-mob@1x.png"
                   srcset="img/catalog/rice500-mob@2x.png 2x" width="72" height="84"
                   alt="Корм «CAT ENERGY PRO» со вкусом риса 500 грамм.">
