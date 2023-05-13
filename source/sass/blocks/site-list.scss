@@ -1,5 +1,7 @@
 .site-list {
   display: none;
+  position: relative;
+  z-index: 2;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -30,7 +32,6 @@
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 30px;
-    /*временный цвет*/
-    color: $color-special;
+    color: $color-basic-light;
   }
 }
