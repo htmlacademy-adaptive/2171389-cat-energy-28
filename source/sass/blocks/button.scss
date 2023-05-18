@@ -7,8 +7,28 @@
   text-align: center;
   box-sizing: border-box;
 
+  &:hover,
+  &:focus-visible {
+    background-color: #5fac2f;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    outline: none;
+  }
+
   &--accessory {
     background-color: $background-special;
     color: $color-special;
+
+    &:hover,
+    &:focus-visible {
+      background-color: #ebebeb;
+    }
+
+    &:active {
+      color: rgba(68, 68, 68, 0.3);
+      outline: none;
+    }
   }
 }

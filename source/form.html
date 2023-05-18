@@ -39,7 +39,7 @@
   </header>
   <main class="page__main form-main">
     <section class="program-selection">
-      <div class="content-container">
+      <div class="content-container content-container--form">
         <h1 class="program-selection__title title">Подбор программы</h1>
         <p class="program-selection__desc">Заполните анкету, и мы подберем<br> программу питания для вашего кота
         </p>
@@ -67,19 +67,22 @@
               <ul class="form-goal__list">
                 <li class="form-goal__item">
                   <label class="form-goal__label">
-                    <input class="form-goal__input form-goal__input--active" type="radio" name="goal" checked>
+                    <input class="form-goal__input visually-hidden" type="radio" name="goal" checked>
+                    <span class="form-goal__box"></span>
                     <span class="form-goal__text">Похудение</span>
                   </label>
                 </li>
                 <li class="form-goal__item">
                   <label class="form-goal__label">
-                    <input class="form-goal__input" type="radio" name="goal">
+                    <input class="form-goal__input visually-hidden" type="radio" name="goal">
+                    <span class="form-goal__box"></span>
                     <span class="form-goal__text">Набор массы</span>
                   </label>
                 </li>
                 <li class="form-goal__item">
                   <label class="form-goal__label">
-                    <input class="form-goal__input" type="radio" name="goal">
+                    <input class="form-goal__input visually-hidden" type="radio" name="goal">
+                    <span class="form-goal__box"></span>
                     <span class="form-goal__text">Не знаю (Нужен ваш совет)</span>
                   </label>
                 </li>
@@ -87,7 +90,7 @@
             </fieldset>
           </div>
           <fieldset class="program-selection__group form__contacts form-contacts">
-            <legend class="form__title form-contacts__title">Контактные данные (владельца&nbsp;кота)</legend>
+            <legend class="form__title form__title--contacts form-contacts__title">Контактные данные (владельца&nbsp;кота)</legend>
             <ul class="form-contacts__list">
               <li class="form-contacts__item">
                 <label class="form-contacts__label" for="email_form">E-mail:<sup>*</sup></label>
@@ -111,37 +114,43 @@
             <ul class="form-add__list">
               <li class="form-add__item">
                 <label class="form-add__label">
-                  <input class="form-add__input form-add__input--active" type="checkbox" name="add-product" checked>
+                  <input class="form-add__input visually-hidden" type="checkbox" name="add-product" checked>
+                  <span class="form-add__box"></span>
                   <span class="form-add__text">Сахарозаменитель</span>
                 </label>
               </li>
               <li class="form-add__item">
                 <label class="form-add__label">
-                  <input class="form-add__input" type="checkbox" name="add-product">
+                  <input class="form-add__input visually-hidden" type="checkbox" name="add-product">
+                  <span class="form-add__box"></span>
                   <span class="form-add__text">Питьевая вода</span>
                 </label>
               </li>
               <li class="form-add__item">
                 <label class="form-add__label">
-                  <input class="form-add__input" type="checkbox" name="add-product">
+                  <input class="form-add__input visually-hidden" type="checkbox" name="add-product">
+                  <span class="form-add__box"></span>
                   <span class="form-add__text">Молоко</span>
                 </label>
               </li>
               <li class="form-add__item">
                 <label class="form-add__label">
-                  <input class="form-add__input" type="checkbox" name="add-product">
+                  <input class="form-add__input visually-hidden" type="checkbox" name="add-product">
+                  <span class="form-add__box"></span>
                   <span class="form-add__text">Витамины</span>
                 </label>
               </li>
             </ul>
           </fieldset>
           <button class="form__button button" type="submit">Отправить заявку</button>
-          <p class="form__warning"><sup>*</sup> — Обязательные поля</p>
+          <p class="form__warning">
+            <sup>*</sup> &ndash; Обязательные поля
+          </p>
         </form>
       </div>
     </section>
     <section class="contacts contacts--dark-theme">
-      <div class="contacts__wrapper content-container">
+      <div class="contacts__wrapper content-container content-container--default">
         <h2 class="visually-hidden">Наши контакты</h2>
         <div class="contacts__content">
           <h3 class="contacts__title">Приглашаем<br> к сотрудничеству<br> дилеров!</h3>

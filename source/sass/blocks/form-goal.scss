@@ -16,5 +16,68 @@
 }
 
 .form-goal__label {
+  position: relative;
+  display: flex;
+  padding: 6px 10px 6px 45px;
+
+  @media (min-width: $tablet-width) {
+    padding: 5px 20px 5px 60px;
+  }
+}
+
+.form-goal__box {
+  position: absolute;
+  top: 0;
+  width: 30px;
+  height: 30px;
+  box-sizing: border-box;
+  border: 1px solid #cdcdcd;
+  border-radius: 50%;
+  margin-left: -45px;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+    margin-left: -60px;
+  }
+}
+
+.form-goal__text {
   @include form-text(#222222);
+}
+
+.form-goal__input:checked + .form-goal__box::before {
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 13px;
+  height: 13px;
+  background-color: $color-accent;
+  border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.form-goal__input:hover + .form-goal__box {
+  border-color: #bababa;
+}
+
+.form-goal__input:focus-visible + .form-goal__box {
+  border-color: #bababa;
+  outline: 2px solid #bababa;
+}
+
+.form-goal__input:disabled + .form-goal__box,
+.form-goal__input:disabled ~ .form-goal__text {
+  opacity: 0.3;
+}
+
+.form-goal__input:checked:disabled + .form-goal__box,
+.form-goal__input:checked:disabled ~ .form-goal__text {
+  opacity: 0.3;
 }

@@ -1,5 +1,15 @@
 .logo {
   display: block;
+
+  &:hover,
+  &:focus-visible {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+    outline: none;
+  }
 }
 
 .logo__img {

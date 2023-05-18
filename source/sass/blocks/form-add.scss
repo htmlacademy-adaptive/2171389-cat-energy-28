@@ -9,7 +9,7 @@
 .form-add__list {
   display: flex;
   flex-wrap: wrap;
-  row-gap: 13px;
+  row-gap: 12px;
 
   @media (min-width: $tablet-width) {
     column-gap: 80px;
@@ -34,5 +34,61 @@
 }
 
 .form-add__label {
+  position: relative;
+  display: flex;
+  padding: 6px 10px 6px 45px;
+
+  @media (min-width: $tablet-width) {
+    padding: 5px 20px 5px 60px;
+  }
+}
+
+.form-add__box {
+  position: absolute;
+  top: 0;
+  width: 30px;
+  height: 30px;
+  box-sizing: border-box;
+  border: 1px solid #cdcdcd;
+  margin-left: -45px;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+    margin-left: -60px;
+  }
+}
+
+.form-add__text {
   @include form-text($color-basic);
+}
+
+.form-add__input:checked + .form-add__box {
+  background-image: url(../../img/icons/check.svg);
+  background-position: center;
+  background-size: 18px 14px;
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    background-size: 24px 19px;
+  }
+}
+
+.form-add__input:hover + .form-add__box {
+  border-color: #bababa;
+}
+
+.form-add__input:focus-visible + .form-add__box {
+  border-color: #bababa;
+  outline: 2px solid #bababa;
+}
+
+.form-add__input:disabled + .form-add__box,
+.form-add__input:disabled ~ .form-add__text {
+  opacity: 0.3;
+}
+
+.form-add__input:checked:disabled + .form-add__box,
+.form-add__input:checked:disabled ~ .form-add__text {
+  opacity: 0.3;
 }

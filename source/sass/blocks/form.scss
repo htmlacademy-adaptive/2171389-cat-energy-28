@@ -22,10 +22,67 @@
   font-size: 24px;
   line-height: 26px;
   color: $color-basic;
+  background-color: $color-basic-light;
+  padding-right: 20px;
+  position: relative;
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(50%);
+    height: 2px;
+    background-color: $color-accent;
+    z-index: -1;
+  }
+
+  &::before {
+    width: 100vw;
+    left: -100vw;
+
+    @media (max-width: $mobile-width-only) {
+      content: none;
+    }
+
+    @media (min-width: $tablet-width) {
+      margin-left: -40px;
+    }
+  }
+
+  &::after {
+    width: calc(100vw - 20px);
+
+    @media (min-width: $tablet-width) {
+      width: calc(100vw - 70px);
+    }
+
+    @media (min-width: $desktop-width) {
+      width: calc(100vw - 110px);
+    }
+  }
+
+  &--contacts {
+    width: 200px;
+
+    @media (min-width: 550px) {
+      width: auto;
+    }
+
+    &::after {
+      top: 16px;
+
+      @media (min-width: 550px) {
+        top: 50%;
+      }
+    }
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
+    padding-right: 40px;
   }
 }
 
@@ -87,10 +144,30 @@
 
 .form__button {
   margin-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    width: 45%;
+    padding: 16px;
+    margin: 0 63px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 46.5%;
+    margin-right: 84px;
+  }
 }
 
 .form__warning {
   @include main-text(14px, 16px);
   color: $color-basic;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 16px;
+    display: inline-block;
+    vertical-align: 35%;
+  }
 }
