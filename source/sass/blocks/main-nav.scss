@@ -84,6 +84,14 @@
 
 .main-nav--nojs .main-nav__toggle {
   display: none;
+
+  &::before {
+    content: none;
+  }
+
+  &::after {
+    content: none;
+  }
 }
 
 .main-nav--nojs .main-nav__list {
