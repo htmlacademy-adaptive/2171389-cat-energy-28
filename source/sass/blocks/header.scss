@@ -1,7 +1,40 @@
 .header__wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  position: relative;
+  z-index: 3;
   padding-top: 10px;
-  padding-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: flex-end;
+    column-gap: 60px;
+    padding-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 54px;
+    column-gap: 80px;
+
+    &--index {
+      padding-top: 53px;
+    }
+  }
+}
+
+.header__logo {
+  flex-shrink: 0;
+
+  @media (max-width: $mobile-width-only) {
+    margin-bottom: 17px;
+  }
+
+  @media (min-width: $tablet-width) {
+    align-self: center;
+    margin-right: auto;
+  }
+}
+
+.header__nav {
+  @media (min-width: $desktop-width) {
+    flex: 0 0 calc(50% - (80px / 2));
+  }
 }

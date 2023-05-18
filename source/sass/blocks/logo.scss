@@ -1,0 +1,32 @@
+.logo {
+  display: block;
+
+  &:hover,
+  &:focus-visible {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+    outline: none;
+  }
+}
+
+.logo__img {
+  @media (min-width: $tablet-width) {
+    width: 174px;
+    height: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+    height: 59px;
+  }
+}
+
+.logo__type {
+  @media (min-width: $tablet-width) {
+    width: 143px;
+    height: 26px;
+  }
+}

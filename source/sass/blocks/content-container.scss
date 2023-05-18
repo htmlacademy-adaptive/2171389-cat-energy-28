@@ -4,15 +4,32 @@
   padding: 0 20px 0 20px;
   margin: 0 auto;
 
+  &--default {
+    padding: 0;
+  }
+
   @media (min-width: $tablet-width) {
     min-width: $tablet-width;
     padding-left: 30px;
     padding-right: 30px;
+
+    &--default {
+      padding: 0;
+    }
+
+    &--form {
+      padding-left: 70px;
+      padding-right: 70px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     width: $desktop-width;
     padding-left: 110px;
     padding-right: 110px;
+
+    &--default {
+      padding: 0;
+    }
   }
 }

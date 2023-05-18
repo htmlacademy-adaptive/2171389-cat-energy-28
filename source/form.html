@@ -12,25 +12,26 @@
   <header class="header">
     <div class="header__wrapper content-container">
       <a class="header__logo logo" href="index.html">
-        <img class="logo__img" src="#" width="" height=""
-          alt="Логотип интернет-магазина фитнес еды для котиков «Кэт энерджи».">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/logo/logo-desk.svg" width="202" height="59">
+          <source media="(min-width: 768px)" srcset="img/logo/logo-tab.svg" width="174" height="52">
+          <img class="logo__img" src="img/logo/logo-mob.svg" width="191" height="38"
+            alt="Логотип интернет-магазина фитнес еды для котиков «Кэт энерджи».">
+        </picture>
       </a>
-      <a class="header__logo-type logo" href="index.html">
-        <img class="logo__type" src="#" alt="Текстовый логотип «Кэт энерджи».">
-      </a>
-      <nav class="header__nav main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
+      <nav class="header__nav main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggle" type="button" aria-label="Кнопка меню.">
+          <span class="main-nav__toggle-icon"></span>
         </button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a class="site-list__link" href="index.html">Главная</a>
+            <a class="main-nav__link site-list__link" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="catalog.html">Каталог продукции</a>
+            <a class="main-nav__link site-list__link" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link site-list__link--active" href="form.html">Подбор программы</a>
+            <a class="main-nav__link site-list__link site-list__link--active" href="form.html">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -38,7 +39,7 @@
   </header>
   <main class="page__main form-main">
     <section class="program-selection">
-      <div class="content-container">
+      <div class="content-container content-container--form">
         <h1 class="program-selection__title title">Подбор программы</h1>
         <p class="program-selection__desc">Заполните анкету, и мы подберем<br> программу питания для вашего кота
         </p>
@@ -66,19 +67,22 @@
               <ul class="form-goal__list">
                 <li class="form-goal__item">
                   <label class="form-goal__label">
-                    <input class="form-goal__input form-goal__input--active" type="radio" name="goal" checked>
+                    <input class="form-goal__input visually-hidden" type="radio" name="goal" checked>
+                    <span class="form-goal__box"></span>
                     <span class="form-goal__text">Похудение</span>
                   </label>
                 </li>
                 <li class="form-goal__item">
                   <label class="form-goal__label">
-                    <input class="form-goal__input" type="radio" name="goal">
+                    <input class="form-goal__input visually-hidden" type="radio" name="goal">
+                    <span class="form-goal__box"></span>
                     <span class="form-goal__text">Набор массы</span>
                   </label>
                 </li>
                 <li class="form-goal__item">
                   <label class="form-goal__label">
-                    <input class="form-goal__input" type="radio" name="goal">
+                    <input class="form-goal__input visually-hidden" type="radio" name="goal">
+                    <span class="form-goal__box"></span>
                     <span class="form-goal__text">Не знаю (Нужен ваш совет)</span>
                   </label>
                 </li>
@@ -86,7 +90,7 @@
             </fieldset>
           </div>
           <fieldset class="program-selection__group form__contacts form-contacts">
-            <legend class="form__title form-contacts__title">Контактные данные (владельца&nbsp;кота)</legend>
+            <legend class="form__title form__title--contacts form-contacts__title">Контактные данные (владельца&nbsp;кота)</legend>
             <ul class="form-contacts__list">
               <li class="form-contacts__item">
                 <label class="form-contacts__label" for="email_form">E-mail:<sup>*</sup></label>
@@ -110,37 +114,43 @@
             <ul class="form-add__list">
               <li class="form-add__item">
                 <label class="form-add__label">
-                  <input class="form-add__input form-add__input--active" type="checkbox" name="add-product" checked>
+                  <input class="form-add__input visually-hidden" type="checkbox" name="add-product" checked>
+                  <span class="form-add__box"></span>
                   <span class="form-add__text">Сахарозаменитель</span>
                 </label>
               </li>
               <li class="form-add__item">
                 <label class="form-add__label">
-                  <input class="form-add__input" type="checkbox" name="add-product">
+                  <input class="form-add__input visually-hidden" type="checkbox" name="add-product">
+                  <span class="form-add__box"></span>
                   <span class="form-add__text">Питьевая вода</span>
                 </label>
               </li>
               <li class="form-add__item">
                 <label class="form-add__label">
-                  <input class="form-add__input" type="checkbox" name="add-product">
+                  <input class="form-add__input visually-hidden" type="checkbox" name="add-product">
+                  <span class="form-add__box"></span>
                   <span class="form-add__text">Молоко</span>
                 </label>
               </li>
               <li class="form-add__item">
                 <label class="form-add__label">
-                  <input class="form-add__input" type="checkbox" name="add-product">
+                  <input class="form-add__input visually-hidden" type="checkbox" name="add-product">
+                  <span class="form-add__box"></span>
                   <span class="form-add__text">Витамины</span>
                 </label>
               </li>
             </ul>
           </fieldset>
           <button class="form__button button" type="submit">Отправить заявку</button>
-          <p class="form__warning"><sup>*</sup> — Обязательные поля</p>
+          <p class="form__warning">
+            <sup>*</sup> &ndash; Обязательные поля
+          </p>
         </form>
       </div>
     </section>
     <section class="contacts contacts--dark-theme">
-      <div class="content-container">
+      <div class="contacts__wrapper content-container content-container--default">
         <h2 class="visually-hidden">Наши контакты</h2>
         <div class="contacts__content">
           <h3 class="contacts__title">Приглашаем<br> к сотрудничеству<br> дилеров!</h3>
@@ -148,7 +158,12 @@
             <span class="contacts__address-city">Санкт&#8209;Петербург</span>
           </address>
         </div>
-        <div class="contacts__map location-map"></div>
+        <div class="contacts__map location-map">
+          <h3 class="visually-hidden">Схема проезда</h3>
+          <iframe class="location-map__interactive location-map__interactive--nojs"
+            src="https://yandex.ru/map-widget/v1/?um=constructor%3A4dd6ebc4af9a1fbcf1dca1089653f59613f06d1615269b3e5cd36eb40f1c1a35&amp;source=constructor"
+            width="320" height="362" title="Схема проезда"></iframe>
+        </div>
       </div>
     </section>
   </main>
@@ -156,7 +171,7 @@
     <div class="footer__wrapper content-container">
       <div class="footer__item">
         <a class="footer__logo logo" href=" index.html">
-          <img class="footer__logo-type logo__type" src="img/logo-trial.png" width="#" height="#"
+          <img class="footer__logo-type logo__type" src="img/logo/logo-type.svg" width="128" height="24"
             alt="Текстовый логотип интернет-магазина «Кэт энерджи»">
         </a>
       </div>
@@ -181,12 +196,13 @@
       </div>
       <div class="footer__item copyright">
         <a class="copyright__text" href="https://htmlacademy.ru/">HTML Academy</a>
-        <a class="copyright__logo" href="https://htmlacademy.ru/">
+        <a class="copyright__logo" href="https://htmlacademy.ru/" aria-label="Сайт HTML Academy">
           <img src="img/htmlacademy-trial.png">
         </a>
       </div>
     </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

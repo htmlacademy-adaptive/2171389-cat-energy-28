@@ -4,11 +4,23 @@
   padding-top: 59px;
   padding-bottom: 43px;
   box-sizing: border-box;
-  background-color: rgba(#68b738, 0.85);
+  background-color: #62A53A;
+  background-image: url(../../img/decorative/background-gift@1x.jpg);
+  background-size: cover;
+  background-position: center;
 
-  @media (min-width: $tablet-width) and (max-width: 1439px) {
+  @media (min-resolution: 2dppx) {
+    background-image: url(../../img/decorative/background-gift@2x.jpg);
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
     min-height: 200px;
     padding: 0 124px 3px 77px;
+    background-image: url(../../img/decorative/background-gift-tab@1x.jpg);
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(../../img/decorative/background-gift-tab@2x.jpg);
+    }
   }
 
   @media (min-width: $desktop-width) {

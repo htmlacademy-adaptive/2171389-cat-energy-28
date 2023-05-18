@@ -1,3 +1,13 @@
 .body {
   background-color: $color-basic-light;
 }
+
+.body__header {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 29px;
+  }
+}
