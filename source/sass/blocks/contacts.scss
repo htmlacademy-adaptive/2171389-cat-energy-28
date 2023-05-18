@@ -5,9 +5,6 @@
 }
 
 .contacts__wrapper {
-  padding-left: 0;
-  padding-right: 0;
-
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 47% auto;
@@ -19,12 +16,12 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  column-gap: 30px;
   row-gap: 20px;
   padding: 26px 20px;
 
   @media (min-width: $tablet-width) {
     padding: 56px 70px;
+    column-gap: 30px;
   }
 
   @media (min-width: $desktop-width) {
