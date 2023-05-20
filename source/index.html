@@ -114,7 +114,7 @@
       </div>
     </section>
     <section class="index-main__demo demo">
-      <div class="demo__container content-container">
+      <div class="demo__container content-container content-container--default-tab">
         <div class="demo__content-wrapper">
           <h2 class="demo__title title">Живой пример</h2>
           <p class="demo__desc">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
@@ -131,7 +131,7 @@
               <dd class="demo-option__desc">Затрачено времени</dd>
             </div>
             <div class="demo-option__results">
-              <dt class="demo-option__title">Затраты на питание:</dt>
+              <dt class="demo-option__title">Затраты на питание:&nbsp;</dt>
               <dd class="demo-option__price">15&nbsp;000&nbsp;РУБ.</dd>
             </div>
           </dl>
@@ -143,8 +143,7 @@
             <source type="image/webp" srcset="img/content/fat-cat-mob@1x.webp 1x, img/content/fat-cat-mob@2x.webp 2x"
               width="280" height="256"> -->
             <source media="(min-width: 768px)"
-              srcset="img/content/fat-cat-tab@1x.png 1x, img/content/fat-cat-tab@2x.png 2x" width="560"
-              height="512">
+              srcset="img/content/fat-cat-tab@1x.png 1x, img/content/fat-cat-tab@2x.png 2x" width="560" height="512">
             <img class="cat-slider__img cat-slider__img--pro" src="img/content/fat-cat-mob@1x.png"
               srcset="img/content/fat-cat-mob@2x.png 2x" width="280" height="256" alt="Кот до похудение">
           </picture>
@@ -165,24 +164,23 @@
             <button class="cat-slider__button">
               <span class="visually-hidden">Кнопка переключения слайдера</span>
             </button>
+          </div>
         </div>
       </div>
     </section>
     <section class="contacts">
-      <div class="contacts__wrapper content-container content-container--default">
-        <h2 class="visually-hidden">Наши контакты</h2>
-        <div class="contacts__content">
-          <h3 class="contacts__title">Приглашаем<br> к сотрудничеству<br> дилеров!</h3>
-          <address class="contacts__address-street">ул. Большая<br> Конюшенная, д. 19/8
-            <span class="contacts__address-city">Санкт&#8209;Петербург</span>
-          </address>
-        </div>
-        <div class="contacts__map location-map">
-          <h3 class="visually-hidden">Схема проезда</h3>
-          <iframe class="location-map__interactive location-map__interactive--nojs"
-            src="https://yandex.ru/map-widget/v1/?um=constructor%3A4dd6ebc4af9a1fbcf1dca1089653f59613f06d1615269b3e5cd36eb40f1c1a35&amp;source=constructor"
-            width="320" height="362" title="Схема проезда"></iframe>
-        </div>
+      <h2 class="visually-hidden">Наши контакты</h2>
+      <div class="contacts__wrapper">
+        <h3 class="contacts__title">Приглашаем<br> к сотрудничеству<br> дилеров!</h3>
+        <address class="contacts__address-street">ул. Большая<br> Конюшенная, д. 19/8
+          <span class="contacts__address-city">Санкт&#8209;Петербург</span>
+        </address>
+      </div>
+      <div class="contacts__map location-map">
+        <h3 class="visually-hidden">Схема проезда</h3>
+        <iframe class="location-map__interactive location-map__interactive--nojs"
+          src="https://yandex.ru/map-widget/v1/?um=constructor%3A4dd6ebc4af9a1fbcf1dca1089653f59613f06d1615269b3e5cd36eb40f1c1a35&amp;source=constructor"
+          height="362" title="Карта проезда"></iframe>
       </div>
     </section>
   </main>
