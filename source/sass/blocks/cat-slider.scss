@@ -1,6 +1,5 @@
 .cat-slider {
   display: flex;
-  justify-content: center;
   margin: auto;
   width: 280px;
   height: 256px;
@@ -9,6 +8,7 @@
   @media (min-width: $tablet-width) {
     width: 560px;
     height: 512px;
+    margin-top: 0;
   }
 }
 
@@ -23,16 +23,6 @@
     left: 50%;
     transform: translateX(-50%);
 
-  }
-
-  @media (min-width: $tablet-width) {
-    &--pro {
-      clip-path: polygon(0 0, 55% 0, 55% 100%, 0% 100%);
-    }
-
-    &--slim {
-      clip-path: polygon(54% 1%, 100% 0, 100% 100%, 54% 100%);
-    }
   }
 }
 
@@ -51,10 +41,6 @@
 
   &:active {
     --color: #5eaa2f;
-  }
-
-  @media (min-width: $tablet-width) {
-    margin-left: 20px;
   }
 }
 

@@ -20,14 +20,13 @@
   padding: 26px 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 56px 70px;
+    padding: 56px 70px 61px 70px;
     column-gap: 30px;
   }
 
   @media (min-width: $desktop-width) {
     max-width: 405px;
-    padding-left: 80px;
-    padding-right: 80px;
+    padding: 56px 80px 60px 80px;
     background-color: $color-basic-light;
     z-index: 2;
     grid-area: 2 / 2 / 3 / 3;
