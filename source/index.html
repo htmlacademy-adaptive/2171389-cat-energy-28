@@ -5,13 +5,19 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
+  <!-- favicon -->
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/icon.svg">
+  <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <!--    -    -->
   <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body class="page__body body">
   <header class="body__header header">
     <div class="header__wrapper header__wrapper--index content-container">
-      <a class="header__logo logo" href="index.html">
+      <a class="header__logo logo" href="#">
         <picture>
           <source media="(min-width: 1440px)" srcset="img/logo/logo-desk.svg" width="202" height="59">
           <source media="(min-width: 768px)" srcset="img/logo/logo-tab.svg" width="174" height="52">
@@ -46,6 +52,12 @@
         </div>
         <div class="promo__img-wrapper">
           <picture>
+            <!-- <source type="image/webp" media="(min-width: 1440px)"
+              srcset="img/content/promo-desk@1x.webp 1x, img/content/promo-desk@2x.webp 2x" width="552" height="499">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/content/promo-tab@1x.webp 1x, img/content/promo-tab@2x.webp 2x" width="708" height="609">
+            <source type="image/webp" srcset="img/content/promo-mob@1x.webp 1x, img/content/promo-mob@2x.webp 2x" width="280"
+              height="270"> -->
             <source media="(min-width: 1440px)"
               srcset="img/content/promo-desk@1x.png 1x, img/content/promo-desk@2x.png 2x" width="552" height="499">
             <source media="(min-width: 768px)" srcset="img/content/promo-tab@1x.png 1x, img/content/promo-tab@2x.png 2x"
@@ -82,7 +94,7 @@
       <div class="content-container">
         <h2 class="feature__title">Как это работает</h2>
         <ul class="feature__list">
-          <li class="feature__item">
+          <li class="feature__item feature__item--first">
             <div class="feature__icon feature__icon--nutrients"></div>
             <p class="feature__text">Функциональное питание содержит только полезные питательные вещества.</p>
           </li>
@@ -102,7 +114,7 @@
       </div>
     </section>
     <section class="index-main__demo demo">
-      <div class="demo__container content-container">
+      <div class="demo__container content-container content-container--default-tab">
         <div class="demo__content-wrapper">
           <h2 class="demo__title title">Живой пример</h2>
           <p class="demo__desc">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
@@ -119,31 +131,56 @@
               <dd class="demo-option__desc">Затрачено времени</dd>
             </div>
             <div class="demo-option__results">
-              <dt class="demo-option__title">Затраты на питание:</dt>
+              <dt class="demo-option__title">Затраты на питание:&nbsp;</dt>
               <dd class="demo-option__price">15&nbsp;000&nbsp;РУБ.</dd>
             </div>
           </dl>
         </div>
         <div class="demo__slider cat-slider">
-          <img class="cat-slider__img" src="#" alt="">
+          <picture>
+            <!-- <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/content/fat-cat-tab@1x.webp 1x, img/content/fat-cat-tab@2x.webp 2x" width="560" height="512">
+            <source type="image/webp" srcset="img/content/fat-cat-mob@1x.webp 1x, img/content/fat-cat-mob@2x.webp 2x"
+              width="280" height="256"> -->
+            <source media="(min-width: 768px)"
+              srcset="img/content/fat-cat-tab@1x.png 1x, img/content/fat-cat-tab@2x.png 2x" width="560" height="512">
+            <img class="cat-slider__img cat-slider__img--pro" src="img/content/fat-cat-mob@1x.png"
+              srcset="img/content/fat-cat-mob@2x.png 2x" width="280" height="256" alt="Кот до похудение">
+          </picture>
+          <picture>
+            <!-- <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/content/skinny-cat-tab@1x.webp 1x, img/content/skinny-cat-tab@2x.webp 2x" width="560"
+              height="512">
+            <source type="image/webp"
+              srcset="img/content/skinny-cat-mob@1x.webp 1x, img/content/skinny-cat-mob@2x.webp 2x" width="280"
+              height="256"> -->
+            <source media="(min-width: 768px)"
+              srcset="img/content/skinny-cat-tab@1x.png 1x, img/content/skinny-cat-tab@2x.png 2x" width="560"
+              height="512">
+            <img class="cat-slider__img cat-slider__img--slim" src="img/content/skinny-cat-mob@1x.png"
+              srcset="img/content/skinny-cat-mob@2x.png 2x" width="280" height="256" alt="Кот после похудение">
+          </picture>
+          <div class="cat-slider__button-wrapper">
+            <button class="cat-slider__button">
+              <span class="visually-hidden">Кнопка переключения слайдера</span>
+            </button>
+          </div>
         </div>
       </div>
     </section>
     <section class="contacts">
-      <div class="contacts__wrapper content-container content-container--default">
-        <h2 class="visually-hidden">Наши контакты</h2>
-        <div class="contacts__content">
-          <h3 class="contacts__title">Приглашаем<br> к сотрудничеству<br> дилеров!</h3>
-          <address class="contacts__address-street">ул. Большая<br> Конюшенная, д. 19/8
-            <span class="contacts__address-city">Санкт&#8209;Петербург</span>
-          </address>
-        </div>
-        <div class="contacts__map location-map">
-          <h3 class="visually-hidden">Схема проезда</h3>
-          <iframe class="location-map__interactive location-map__interactive--nojs"
-            src="https://yandex.ru/map-widget/v1/?um=constructor%3A4dd6ebc4af9a1fbcf1dca1089653f59613f06d1615269b3e5cd36eb40f1c1a35&amp;source=constructor"
-            width="320" height="362" title="Схема проезда"></iframe>
-        </div>
+      <h2 class="visually-hidden">Наши контакты</h2>
+      <div class="contacts__wrapper">
+        <h3 class="contacts__title">Приглашаем<br> к сотрудничеству<br> дилеров!</h3>
+        <address class="contacts__address-street">ул. Большая<br> Конюшенная, д. 19/8
+          <span class="contacts__address-city">Санкт&#8209;Петербург</span>
+        </address>
+      </div>
+      <div class="contacts__map location-map">
+        <h3 class="visually-hidden">Схема проезда</h3>
+        <iframe class="location-map__interactive location-map__interactive--nojs"
+          src="https://yandex.ru/map-widget/v1/?um=constructor%3A4dd6ebc4af9a1fbcf1dca1089653f59613f06d1615269b3e5cd36eb40f1c1a35&amp;source=constructor"
+          height="362" title="Карта проезда"></iframe>
       </div>
     </section>
   </main>
@@ -176,7 +213,9 @@
       </div>
       <div class="footer__item copyright">
         <a class="copyright__text" href="https://htmlacademy.ru/">HTML Academy</a>
-        <a class="copyright__logo" href="https://htmlacademy.ru/" aria-label="Сайт HTML Academy"></a>
+        <a class="copyright__logo" href="https://htmlacademy.ru/" aria-label="Сайт HTML Academy">
+          <span class="copyright__icon"></span>
+        </a>
       </div>
     </div>
   </footer>
