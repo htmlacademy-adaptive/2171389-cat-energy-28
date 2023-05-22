@@ -1,8 +1,7 @@
 .catalog-gift {
   width: 100%;
   min-height: 290px;
-  padding-top: 59px;
-  padding-bottom: 43px;
+  padding: 59px 20px 43px 20px;
   box-sizing: border-box;
   background-color: #62a53a;
   background-image: url("../img/decorative/background-gift@1x.jpg");
@@ -15,7 +14,7 @@
 
   @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
     min-height: 200px;
-    padding: 0 124px 3px 77px;
+    padding: 20px 124px 20px 78px;
     background-image: url("../img/decorative/background-gift-tab@1x.jpg");
 
     @media (min-resolution: 2dppx) {
@@ -25,6 +24,19 @@
 
   @media (min-width: $desktop-width) {
     height: auto;
+    padding-top: 57px;
+  }
+}
+
+.catalog-gift__icon {
+  width: 78px;
+  height: 80px;
+  background-image: url("../icons/sprite.svg#gift");
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+    width: 80px;
+    height: 83px;
   }
 }
 
@@ -32,4 +44,8 @@
   @include main-text(16px, 20px);
   color: $color-basic-light;
   text-align: center;
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+    text-align: start;
+  }
 }

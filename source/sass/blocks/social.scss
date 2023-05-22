@@ -1,5 +1,5 @@
 .social {
-  padding-top: 19px;
+  padding-top: 20px;
   padding-bottom: 19px;
 
   @media (max-width: $mobile-width-only) {
@@ -10,6 +10,7 @@
   @media (min-width: $tablet-width) {
     padding-top: 8px;
     padding-bottom: 7px;
+    margin: 0 auto;
   }
 }
 
@@ -23,6 +24,36 @@
   display: block;
   width: 28px;
   height: 22px;
-  /*временный бордер*/
-  border: 1px solid $color-basic;
+  background-color: #666666;
+  mask-repeat: no-repeat;
+  mask-position: center;
+
+  &--vk {
+    mask-image: url("../icons/sprite.svg#vk");
+    mask-size: 27px 17px;
+  }
+
+  &--youtube {
+    mask-image: url("../icons/sprite.svg#youtube");
+    mask-size: 24px 19px;
+  }
+
+  &--telegram {
+    mask-image: url("../icons/sprite.svg#telegram");
+    mask-size: 19px 17px;
+  }
+
+  &:focus-visible {
+    outline: none;
+    background-color: $color-accent;
+  }
+
+  &:hover,
+  &:active {
+    background-color: $color-accent;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

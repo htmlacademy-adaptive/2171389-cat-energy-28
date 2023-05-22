@@ -80,6 +80,29 @@
   height: 60px;
   background-color: $color-accent;
   flex-shrink: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &--nutrients {
+    background-image: url("../icons/sprite.svg#leaf");
+    background-size: 30px 32px;
+  }
+
+  &--consistency {
+    background-image: url("../icons/sprite.svg#powder");
+    background-size: 26px 29px;
+  }
+
+
+  &--meal {
+    background-image: url("../icons/sprite.svg#eat");
+    background-size: 25px 30px;
+  }
+
+  &--period {
+    background-image: url("../icons/sprite.svg#clock");
+    background-size: 26px 31px;
+  }
 
   @media (min-width: $tablet-width) {
     width: 80px;
@@ -93,5 +116,15 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
+  }
+}
+
+.feature__br {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+
+  @media (min-width: 930px) and (max-width: $tablet-width-only) {
+    display: none;
   }
 }

@@ -27,11 +27,15 @@
 .footer__item {
   flex-basis: 100%;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 19px;
 
   @media (min-width: $tablet-width) {
     flex-basis: auto;
     padding: 0;
+
+    &--social {
+      transform: translateX(10%);
+    }
   }
 }
 

@@ -22,6 +22,7 @@
 .form-info__input {
   @include form-text;
   @include input-basic;
+  line-height: 24px;
   padding: 14px 20px 13px 20px;
   width: 100%;
   flex-grow: 1;
