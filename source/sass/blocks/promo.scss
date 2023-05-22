@@ -9,11 +9,11 @@
       height: 302px;
       left: 0;
       background-color: #62a53a;
-      background-image: url(../../img/decorative/promo-background-mob@1x.jpg);
+      background-image: url("../img/decorative/promo-background-mob@1x.jpg");
       background-size: cover;
 
       @media (min-resolution: 2dppx) {
-        background-image: url(../../img/decorative/promo-background-mob@2x.jpg);
+        background-image: url("../img/decorative/promo-background-mob@2x.jpg");
       }
     }
   }
@@ -29,11 +29,11 @@
       right: 0;
       top: 0;
       background-color: #62a53a;
-      background-image: url(../../img/decorative/promo-background-desk@1x.jpg);
+      background-image: url("../img/decorative/promo-background-desk@1x.jpg");
       background-size: cover;
 
       @media (min-resolution: 2dppx) {
-        background-image: url(../../img/decorative/promo-background-desk@2x.jpg);
+        background-image: url("../img/decorative/promo-background-desk@2x.jpg");
       }
     }
   }
