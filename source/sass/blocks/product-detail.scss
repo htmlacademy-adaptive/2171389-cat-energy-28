@@ -10,9 +10,10 @@
 .product-detail__item {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 4px;
+  column-gap: 10px;
 
   @media (min-width: $tablet-width) {
+    column-gap: 20px;
     padding-bottom: 9px;
     border-bottom: 1px solid #cdcdcd;
 
@@ -24,4 +25,8 @@
   @media (min-width: $desktop-width) {
     padding-bottom: 10px;
   }
+}
+
+.product-detail__value {
+  text-align: right;
 }

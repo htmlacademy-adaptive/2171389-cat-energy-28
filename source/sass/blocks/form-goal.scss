@@ -72,6 +72,11 @@
   outline: 2px solid #bababa;
 }
 
+.form-goal__input:active + .form-goal__box {
+  background-color: #cdcdcd;
+  opacity: 0.3;
+}
+
 .form-goal__input:disabled + .form-goal__box,
 .form-goal__input:disabled ~ .form-goal__text {
   opacity: 0.3;

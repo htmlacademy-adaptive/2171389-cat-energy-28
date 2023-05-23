@@ -1,6 +1,7 @@
 .products__list {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   row-gap: 20px;
 
   @media (min-width: $tablet-width) {
@@ -10,10 +11,13 @@
   @media (min-width: $desktop-width) {
     flex-direction: row;
     column-gap: 80px;
+    row-gap: 40px;
   }
 }
 
 .products__item {
+  display: flex;
+  flex-direction: column;
   padding: 30px 20px 18px 21px;
   background-color: $background-special;
   background-repeat: no-repeat;
@@ -56,7 +60,8 @@
 
   @media (min-width: $desktop-width) {
     padding: 77px 61px 55px 52px;
-    flex-basis: 50%;
+    box-sizing: border-box;
+    flex: 0 0 calc((100% / 2) - 40px);
   }
 }
 
@@ -103,11 +108,13 @@
 .products__link {
   @include accented-text(16px, 16px);
   padding: 4px 57px 4px 0;
+  margin-top: auto;
   color: $color-basic;
   background-image: url("../icons/sprite.svg#arrow");
   background-size: 32px 12px;
   background-position: center right 9px;
   background-repeat: no-repeat;
+  align-self: flex-start;
 
   &:hover,
   &:active {

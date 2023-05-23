@@ -3,6 +3,14 @@
   z-index: 3;
   padding-top: 10px;
 
+  @media (max-width: $mobile-width-only) {
+    border-bottom: 1px solid #d9d9d9;
+
+    &--index {
+      border-bottom: none;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     display: flex;
     align-items: flex-end;
