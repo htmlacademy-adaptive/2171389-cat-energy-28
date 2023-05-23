@@ -30,6 +30,9 @@
   padding-bottom: 19px;
 
   @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
     flex-basis: auto;
     padding: 0;
 

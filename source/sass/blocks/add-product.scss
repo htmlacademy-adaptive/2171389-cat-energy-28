@@ -1,8 +1,8 @@
 .add-product {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 13px;
-  padding-bottom: 19px;
+  padding-top: 14px;
+  padding-bottom: 18px;
 
   &:not(:last-child) {
     border-bottom: 1px solid #cdcdcd;
@@ -10,7 +10,7 @@
 
   @media (min-width: $tablet-width) {
     align-items: flex-end;
-    row-gap: 25px;
+    row-gap: 24px;
     padding: 26px 38px 28px 38px;
   }
 
@@ -47,7 +47,7 @@
   justify-content: space-between;
   column-gap: 10px;
   flex-basis: 100%;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
@@ -65,7 +65,7 @@
 .add-product__serving-size {
   @media (min-width: $tablet-width) {
     text-align: right;
-    flex-basis: 63%;
+    flex-basis: 70%;
   }
 
   @media (min-width: $desktop-width) {

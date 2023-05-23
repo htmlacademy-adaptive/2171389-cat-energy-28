@@ -6,7 +6,7 @@
 
   @media (min-width: $tablet-width) {
     row-gap: 72px;
-    margin-bottom: 71px;
+    margin-bottom: 75px;
   }
 
   @media (min-width: $desktop-width) {
@@ -16,6 +16,7 @@
 }
 
 .form__title {
+  @include decorative-line;
   font-family: $oswald;
   font-style: normal;
   font-weight: 400;
@@ -23,59 +24,13 @@
   line-height: 26px;
   color: $color-basic;
   background-color: $color-basic-light;
-  padding-right: 20px;
-  position: relative;
-
-  &::before,
-  &::after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 50%;
-    transform: translateY(50%);
-    height: 2px;
-    background-color: $color-accent;
-    z-index: -1;
-  }
-
-  &::before {
-    width: 100vw;
-    left: -100vw;
-
-    @media (max-width: $mobile-width-only) {
-      content: none;
-    }
-
-    @media (min-width: $tablet-width) {
-      margin-left: -40px;
-    }
-  }
-
-  &::after {
-    width: calc(100vw - 20px);
-
-    @media (min-width: $tablet-width) {
-      width: calc(100vw - 70px);
-    }
-
-    @media (min-width: $desktop-width) {
-      width: calc(100vw - 110px);
-    }
-  }
 
   &--contacts {
     width: 200px;
+    padding-right: 0;
 
     @media (min-width: 550px) {
       width: auto;
-    }
-
-    &::after {
-      top: 16px;
-
-      @media (min-width: 550px) {
-        top: 50%;
-      }
     }
   }
 
@@ -120,18 +75,26 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 65px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 67px;
+  }
 }
 
 .form__comment {
-  margin-bottom: 23px;
+  margin-bottom: 18px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 65px;
+    margin-bottom: 62px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 64px;
   }
 }
 
 .form__add {
-  margin-bottom: 34px;
+  margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 54px;

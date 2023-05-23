@@ -17,7 +17,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    column-gap: 80px;
+    column-gap: 81px;
   }
 }
 
@@ -25,7 +25,7 @@
   flex-basis: 100%;
 
   @media (min-width: $tablet-width) {
-    flex-basis: 40%;
+    flex-basis: 42%;
   }
 
   @media (min-width: $desktop-width) {
@@ -81,6 +81,11 @@
 .form-add__input:focus-visible + .form-add__box {
   border-color: #bababa;
   outline: 2px solid #bababa;
+}
+
+.form-add__input:active + .form-add__box {
+  background-color: #cdcdcd;
+  opacity: 0.3;
 }
 
 .form-add__input:disabled + .form-add__box,
