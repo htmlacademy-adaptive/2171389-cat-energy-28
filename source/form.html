@@ -11,7 +11,7 @@
   <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
   <link rel="manifest" href="manifest.webmanifest">
   <!--    -    -->
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body class="page__body body">
@@ -100,14 +100,20 @@
               (владельца&nbsp;кота)</legend>
             <ul class="form-contacts__list">
               <li class="form-contacts__item">
-                <label class="form-contacts__label" for="email_form">E-mail:<sup>*</sup></label>
-                <input class="form-contacts__input form-contacts__input--email" type="email" name="email"
-                  id="email_form" placeholder="kuklachev@gmail.com" required>
+                <Label class="form-contacts__label" for="email_form">
+                  <span class="form-contacts__label-name">E-mail:<sup>*</sup></span>
+                  <input class="form-contacts__input" type="email" name="email"
+                    id="email_form" placeholder="kuklachev@gmail.com" required>
+                  <span class="form-contacts__icon form-contacts__icon--email"></span>
+                </Label>
               </li>
               <li class="form-contacts__item">
-                <label class="form-contacts__label" for="phone_form">Телефон:<sup>*</sup></label>
-                <input class="form-contacts__input form-contacts__input--tel" type="tel" name="phone" id="phone_form"
-                  placeholder="8 (960) 900-60-90" required>
+                <label class="form-contacts__label" for="phone_form">
+                  <span class="form-contacts__label-name">Телефон:<sup>*</sup></span>
+                  <input class="form-contacts__input" type="tel" name="phone" id="phone_form"
+                    placeholder="8 (960) 900-60-90" required>
+                  <span class="form-contacts__icon form-contacts__icon--tel"></span>
+                </label>
               </li>
             </ul>
           </fieldset>
@@ -200,9 +206,8 @@
         </ul>
       </div>
       <div class="footer__item copyright">
-        <a class="copyright__text" href="https://htmlacademy.ru/">HTML Academy</a>
-        <a class="copyright__logo" href="https://htmlacademy.ru/" aria-label="Сайт HTML Academy">
-          <span class="copyright__icon"></span>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy">
+          <span class="copyright__text">HTML Academy</span>
         </a>
       </div>
     </div>

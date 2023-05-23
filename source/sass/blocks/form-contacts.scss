@@ -23,20 +23,23 @@
 }
 
 .form-contacts__item {
-  display: flex;
-  align-items: center;
-  column-gap: 10px;
-
-  @media (min-width: $tablet-width) {
-    column-gap: 20px;
-  }
-
   @media (min-width: $desktop-width) {
     flex: 0 0 calc((100% / 2) - 40px);
   }
 }
 
 .form-contacts__label {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    column-gap: 20px;
+  }
+}
+
+.form-contacts__label-name {
   @include form-text;
   flex-shrink: 0;
 }
@@ -44,10 +47,37 @@
 .form-contacts__input {
   @include form-text;
   @include input-basic;
+  line-height: 24px;
   padding: 15px 45px 14px 15px;
   flex-grow: 1;
 
+  &:focus + .form-contacts__icon {
+    background-color: $color-accent;
+  }
+
+  &--error + .form-contacts__icon {
+    background-color: $color-error;
+  }
+
   @media (min-width: $tablet-width) {
-    padding: 11px 45px 11px 20px;
+    padding: 11px 55px 11px 20px;
+  }
+}
+
+.form-contacts__icon {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: $color-basic;
+
+  &--email {
+    mask-image: url("../icons/sprite.svg#email");
+  }
+
+  &--tel {
+    mask-image: url("../icons/sprite.svg#tel");
   }
 }

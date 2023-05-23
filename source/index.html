@@ -11,7 +11,7 @@
   <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
   <link rel="manifest" href="manifest.webmanifest">
   <!--    -    -->
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body class="page__body body">
@@ -52,12 +52,12 @@
         </div>
         <div class="promo__img-wrapper">
           <picture>
-            <!-- <source type="image/webp" media="(min-width: 1440px)"
+            <source type="image/webp" media="(min-width: 1440px)"
               srcset="img/content/promo-desk@1x.webp 1x, img/content/promo-desk@2x.webp 2x" width="552" height="499">
             <source type="image/webp" media="(min-width: 768px)"
               srcset="img/content/promo-tab@1x.webp 1x, img/content/promo-tab@2x.webp 2x" width="708" height="609">
-            <source type="image/webp" srcset="img/content/promo-mob@1x.webp 1x, img/content/promo-mob@2x.webp 2x" width="280"
-              height="270"> -->
+            <source type="image/webp" srcset="img/content/promo-mob@1x.webp 1x, img/content/promo-mob@2x.webp 2x"
+              width="280" height="270">
             <source media="(min-width: 1440px)"
               srcset="img/content/promo-desk@1x.png 1x, img/content/promo-desk@2x.png 2x" width="552" height="499">
             <source media="(min-width: 768px)" srcset="img/content/promo-tab@1x.png 1x, img/content/promo-tab@2x.png 2x"
@@ -108,7 +108,8 @@
           </li>
           <li class="feature__item">
             <div class="feature__icon feature__icon--period"></div>
-            <p class="feature__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+            <p class="feature__text">Уже через месяц наслаждайтесь изменениями к лучшему<br class="feature__br"> вашего
+              питомца!</p>
           </li>
         </ul>
       </div>
@@ -138,22 +139,22 @@
         </div>
         <div class="demo__slider cat-slider">
           <picture>
-            <!-- <source type="image/webp" media="(min-width: 768px)"
+            <source type="image/webp" media="(min-width: 768px)"
               srcset="img/content/fat-cat-tab@1x.webp 1x, img/content/fat-cat-tab@2x.webp 2x" width="560" height="512">
             <source type="image/webp" srcset="img/content/fat-cat-mob@1x.webp 1x, img/content/fat-cat-mob@2x.webp 2x"
-              width="280" height="256"> -->
+              width="280" height="256">
             <source media="(min-width: 768px)"
               srcset="img/content/fat-cat-tab@1x.png 1x, img/content/fat-cat-tab@2x.png 2x" width="560" height="512">
             <img class="cat-slider__img cat-slider__img--pro" src="img/content/fat-cat-mob@1x.png"
               srcset="img/content/fat-cat-mob@2x.png 2x" width="280" height="256" alt="Кот до похудение">
           </picture>
           <picture>
-            <!-- <source type="image/webp" media="(min-width: 768px)"
+            <source type="image/webp" media="(min-width: 768px)"
               srcset="img/content/skinny-cat-tab@1x.webp 1x, img/content/skinny-cat-tab@2x.webp 2x" width="560"
               height="512">
             <source type="image/webp"
               srcset="img/content/skinny-cat-mob@1x.webp 1x, img/content/skinny-cat-mob@2x.webp 2x" width="280"
-              height="256"> -->
+              height="256">
             <source media="(min-width: 768px)"
               srcset="img/content/skinny-cat-tab@1x.png 1x, img/content/skinny-cat-tab@2x.png 2x" width="560"
               height="512">
@@ -192,7 +193,7 @@
             alt="Текстовый логотип интернет-магазина «Кэт энерджи»">
         </a>
       </div>
-      <div class="footer__item social">
+      <div class="footer__item footer__item--social social">
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">
@@ -212,9 +213,8 @@
         </ul>
       </div>
       <div class="footer__item copyright">
-        <a class="copyright__text" href="https://htmlacademy.ru/">HTML Academy</a>
-        <a class="copyright__logo" href="https://htmlacademy.ru/" aria-label="Сайт HTML Academy">
-          <span class="copyright__icon"></span>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy">
+          <span class="copyright__text">HTML Academy</span>
         </a>
       </div>
     </div>
