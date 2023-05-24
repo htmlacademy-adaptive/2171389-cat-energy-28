@@ -15,7 +15,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    column-gap: 20px;
+    column-gap: 21px;
     padding: 15px 0 16px 0;
   }
 }
@@ -64,11 +64,12 @@
 .add-product__serving-size {
   @media (min-width: $tablet-width) {
     text-align: right;
-    flex-basis: 70%;
+    flex-basis: 73%;
   }
 
   @media (min-width: $desktop-width) {
     text-align: left;
+    flex-basis: 70%;
   }
 }
 
