@@ -11,6 +11,9 @@
   <link rel="manifest" href="manifest.webmanifest">
   <!--    -    -->
   <link href="css/style.min.css" rel="stylesheet">
+  <link rel="preload" href="fonts/lato/latoregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswald/oswaldmedium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff" type="font/woff2" as="font" crossorigin="anonymous">
 </head>
 <body class="page__body body">
   <header class="header">
@@ -170,10 +173,22 @@
       </div>
       <div class="contacts__map location-map">
         <h3 class="visually-hidden">Схема проезда</h3>
-        <iframe class="location-map__interactive location-map__interactive--nojs"
+        <iframe class="location-map__interactive" loading="lazy"
           src="https://yandex.ru/map-widget/v1/?ll=30.323036%2C59.938631&amp;mode=search&amp;ol=geo&amp;ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NzM5NDE4NBJh0KDQvtGB0YHQuNGPLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQu9C40YbQsCwgMTkvOCIKDZaV8kEVKcFvQg%2C%2C&amp;z=16.59"
           height="362" style="position: relative;">
         </iframe>
+        <div class="location-map__img-wrapper">
+          <noscript>
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/map/map-desk@1x.png 1x, img/map/map-desk@2x.png 2x"
+                width="1440" height="400">
+              <source media="(min-width: 768px)" srcset="img/map/map-tab@1x.png 1x, img/map/map-tab@2x.png 2x"
+                width="768" height="400">
+              <img class="location-map__img" loading="lazy" src="img/map/map-mob@1x.png"
+                srcset="img/map/map-mob@2x.png 2x" width="320" height="362" alt="Карта проезда.">
+            </picture>
+          </noscript>
+        </div>
       </div>
     </section>
   </main>
