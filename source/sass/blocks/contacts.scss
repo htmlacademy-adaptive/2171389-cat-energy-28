@@ -42,6 +42,10 @@
     line-height: 26px;
     margin-top: 4px;
   }
+
+  @media (min-width: $desktop-width) {
+    flex-basis: 50%;
+  }
 }
 
 .contacts__address-street {
@@ -54,6 +58,10 @@
 
   @media (min-width: $tablet-width) and (max-width: 1439px) {
     text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-basis: 39%;
   }
 }
 
